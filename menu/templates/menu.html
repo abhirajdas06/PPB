@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block meta %}
+<meta name="author" content="SemiColonWeb" />
+<meta name="description" content="" />
+<title> Palm Pavilion Banquet | Menu</title>
+{% endblock meta %}
+{% block menu %}
+
+<!-- Page Title
+		============================================= -->
+
+<section id="slider" class="slider-element dark parallax include-header"
+	style="background: #111 url('{% static 'demos/recipes/images/menu2.png' %}') center center / cover no-repeat; padding: 230px 0;"
+	data-0="background-position:0px -200px;" data-400="background-position:0px -100px;">
+
+	<div class="container clearfix">
+		<div class="mx-auto center" style="max-width: 800px">
+			<h1 class="nott fw-bold  display-5" data-animate="zoomIn">Enjoy our menu and experience the beauty of
+				naturalness.</h3>
+		</div>
+		{% comment %} <div class="d-flex justify-content-center align-items-center mt-3 clearfix">
+			<a class="button button-circle button-large text-white mb-0 ms-0" href="#footer"
+				data-animate="zoomIn">Reserve Now</a>
+		</div> {% endcomment %}
+
+	</div>
+
+</section>
+
+<!-- Content
+		============================================= -->
+ {% comment %} <section id="content">
+	<div class="content-wrap py-0" style="overflow: visible;">
+		<div class="container">
+
+			<div class=" tabs-justify" style="position: relative; margin: 30px;">
+
+			
+					<ul class="tab-nav clearfix border-bottom-0">
+						<li><a href="{% url 'menu' %}"><img src="{% static 'demos\recipes\images\restaurant.png' %}" alt="Image">All</a></li>
+						{% for category in categories %}
+						<li><a href="{% url 'menu' %}?category={{category.name}}">
+							<img src="{{category.images.url}}" alt="Image">{{category.name}}
+							</a>
+						</li>
+						{% endfor %}
+					</ul>  {% endcomment %}
+				
+
+				{% comment %}<div class="tab-container mt-4">
+					<div class="tab-content">
+						<div class="row gutter-40">
+							{% for menu in menus %}
+							<div class="col-lg-3 col-md-6">
+								<div class="portfolio-item">
+									<img src="{{menu.image.url}}" alt="{{menu.alt}}" class="rounded" >
+									<div class="portfolio-desc pt-2">
+										<h4 class="mb-1 center">{{menu.name}}</h4>
+									</div>
+								</div>
+							</div>
+							{% endfor %}	
+						</div>
+					</div>
+				</div>{% endcomment %}	
+
+			{% comment %} </div>
+
+		</div>
+
+
+
+	</div>
+</section><!-- #content end -->  {% endcomment %}
+
+
+
+<section id="content">
+	<div class="content-wrap">
+		<div class="container clearfix">
+
+			<div class="grid-filter-wrap">
+				
+				<!-- Portfolio Filter
+				============================================= -->
+				<ul class="grid-filter" data-container="#portfolio">
+			
+					<li class="activeFilter"><a href="#" data-filter="*">Show All</a></li>
+					{% for category in categories %}
+					<li><a href="#" data-filter=".{{category.name |slugify }}">{{category.name}}</a></li>
+				
+					{% endfor %}
+				</ul><!-- .grid-filter end -->
+				
+				<div class="grid-shuffle rounded" data-container="#portfolio">
+					<i class="icon-random"></i>
+				</div>
+
+			</div>
+
+			<!-- Portfolio Items
+			============================================= -->
+			<div id="portfolio" class="portfolio row grid-container gutter-20" data-layout="fitRows">
+
+				<!-- Portfolio Item: Start --> 
+				{% for menu in menus %}
+					
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12  {{menu.category | slugify }} ">
+					<!-- Grid Inner: Start -->
+					<div class="grid-inner">	
+						<!-- Image: Start -->
+						<div class="portfolio-image">
+							<a href="portfolio-single.html">
+								<img src="{{menu.image.url}}" alt="Open Imagination">
+							</a>
+							<!-- Overlay: Start -->
+							<div class="bg-overlay">
+								<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+									<a href="{{menu.image.url}}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="{{menu.name}}"><i class="icon-line-plus"></i></a>
+								</div>
+								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+							</div>
+							<!-- Overlay: End -->
+						</div>
+						<!-- Image: End -->
+						<!-- Decription: Start -->
+						 <div class="portfolio-desc">
+							<h3>{{menu.name}}</h3>
+							
+						</div>
+						<!-- Description: End -->
+					</div>
+					<!-- Grid Inner: End -->
+				</article>
+				<!-- Portfolio Item: End -->
+				{% endfor %}
+				
+
+			</div><!-- #portfolio end -->
+
+		</div>
+	</div>
+</section><!-- #content end -->
+{% endblock menu %}

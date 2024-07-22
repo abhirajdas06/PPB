@@ -1,0 +1,698 @@
+{% load static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+	{% block meta %}{% endblock meta %}
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap"
+		rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/dark.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'css/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/swiper.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="{% static 'one-page/css/et-line.css' %}" type="text/css" />
+
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/settings.css' %}" media="screen" />
+	<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/layers.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/navigation.css' %}" />
+
+	<!-- ADD-ONS CSS FILES -->
+	<link rel="stylesheet" type="text/css"
+		href="{% static 'include/rs-plugin/css/addons/revolution.addon.liquideffect.css' %}" />
+
+	<!--  Recipes Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/colors.php?color=267DF4' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'demos/recipes/css/fonts.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'demos/recipes/recipes.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'demos/restaurant/restaurant.css' %}" type="text/css" />
+	
+	<link rel="stylesheet" href="{% static 'demos/restaurant/css/fonts.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/components/datepicker.css' %}" type="text/css" />
+
+	<style>
+		.dt-shadow {
+			text-shadow: 0px 10px 30px rgba(0, 0, 0, 1);
+		}
+
+		#rev_slider_131_1 .uranus.tparrows {
+			width: 50px;
+			height: 50px;
+			background: rgba(255, 255, 255, 0);
+		}
+
+		#rev_slider_131_1 .uranus.tparrows:before {
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 40px;
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+		}
+
+		#rev_slider_131_1 .uranus.tparrows:hover:before {
+			opacity: 0.75;
+		}
+
+		.slotholder canvas {
+			height: 100% !important;
+		}
+
+		.portfolio-single-content h2 {
+			font-size: 1.75rem;
+		}
+
+		.portfolio-meta {
+			font-size: 1rem;
+		}
+
+		.portfolio-meta li {
+			margin-bottom: 1rem;
+		}
+
+		/* Swiper */
+		.slider-top .swiper-slide {
+			width: 100%;
+			height: 100%;
+			min-height: 500px;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		@media (min-width: 992px) {
+			.slider-top .swiper-slide {
+				width: 85%;
+				min-height: 550px;
+			}
+		}
+
+		.slider-thumbs {
+			padding: 10px 0;
+		}
+
+		.slider-thumbs .swiper-slide {
+			width: 23%;
+			height: 100%;
+			opacity: 0.3;
+		}
+
+		.slider-thumbs .swiper-slide-active {
+			opacity: 1;
+		}
+	</style>
+	<!-- / -->
+</head>
+
+<body class="stretched">
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header" data-sticky-shrink="false">
+					
+			<div id="header-wrap">
+				{% for message in messages  %}
+
+						<div class="alert alert-{{ message.tags }} alert-dismissible fade show " role="alert">
+							<div class="container">
+							<strong>Message : </strong> {{ message }}
+							<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+							</div>
+						</div>
+						{% endfor %}
+				<div class="container">
+					
+					<div class="header-row">
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="/" class="standard-logo"><img src="{% static 'images\logo\Untitled-1.png' %}"
+									alt="Canvas Logo" /></a>
+							<a href="/" class="retina-logo"><img src="{% static 'images\logo\Untitled-1.png' %}"
+									alt="Canvas Logo" /></a>
+						</div>
+						<!-- #logo end -->
+
+						{% comment %}
+						<div class="header-misc">
+							<!-- Top Search
+							============================================= -->
+							<div id="top-search" class="header-misc-icon">
+								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i
+										class="icon-line-cross"></i></a>
+							</div>
+							<!-- #top-search end -->
+						</div>
+						{% endcomment %}
+						
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100">
+								<path
+									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+								</path>
+								<path d="m 30,50 h 40"></path>
+								<path
+									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+								</path>
+							</svg>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+							<ul class="menu-container">
+								<li class="menu-item current">
+									<a class="menu-link" href="/">
+										<div>Home</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{% url 'about' %}">
+										<div>About Us</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{% url 'menu' %}">
+										<div>Menu</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{% url 'services' %}">
+										<div>
+											Services
+											{% comment %} <i class="icon-angle-down1 d-none d-lg-inline-block"></i>{% endcomment %}</div> 
+									</a>
+									{% comment %} <ul class="sub-menu-container rounded-bottom">
+										<li class="menu-item">
+											<a class="menu-link" href="demo-recipes-recipe-single.html">
+												<div>Recipe Single Page</div>
+											</a>
+										</li>
+										<div class="dropdown-divider my-0"></div>
+										<li class="menu-item">
+											<a class="menu-link" href="demo-recipes-recipes.html">
+												<div>Popular</div>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="demo-recipes-recipes.html">
+												<div>Recent</div>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="demo-recipes-recipes.html">
+												<div>Most liked</div>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="demo-recipes-recipes.html">
+												<div>Most Commented</div>
+											</a>
+										</li>
+									</ul> {% endcomment %}
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{% url 'gallery' %}">
+										<div>Gallery</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{% url 'contact' %}">
+										<div>Contact Us</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- #primary-menu end -->
+
+						{% comment %}
+						<form class="top-search-form" action="search.html" method="get">
+							<input type="text" name="q" class="form-control" value=""
+								placeholder="Type &amp; Hit Enter.." autocomplete="off" />
+						</form>
+						{% endcomment %}
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header>
+		<!-- #header end -->
+
+		{% block home %}{% endblock home %} {% block about %}{% endblock about %}
+		{% block menu %}{% endblock menu %} {% block gallery %}{% endblock gallery %} 
+		{% block contact %}{% endblock contact %} {% block services %}{% endblock services %}
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class=" border-0"><!--bg-white-->
+			<div class="container">
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap">
+					
+					<div class="row justify-content-between w-100 col-mb-50 mt-4">
+
+						<div class="col-lg-3 col-md-4">
+							<a href="#"><img src="{% static 'images\logo\Untitled-1.png' %}" alt="App Link"
+								height="100px" weight="100px" class="footer-logo" /></a>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+							
+						</div>
+
+						<div class="col-md-8">
+
+							<div class="row gutter-50">
+								<div class="col-lg-2 ">
+
+									<div class="widget widget_links">
+
+										<h4 class="text-larger nott ls0">About</h4>
+
+										<ul>
+											<li><a href="/">Home</a></li>
+											<li><a href="{% url 'about' %}">About</a></li>
+											<li><a href="#">Menu</a></li>
+											<li><a href="#">Services</a></li>
+											<li><a href="#">Gallery</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+
+									</div>
+
+								</div>
+
+								<div class="col-lg-4 ">
+
+									<div class="widget">
+
+										<h4 class="text-larger nott ls0">Contact</h4>
+
+										<ul class="list-unstyled">
+											<li class="mb-2">
+												<i class="me-2 icon-location"></i>11326 Bayuni Road,
+												<a class="mx-4 text-main">Makeni,Lusaka</a>
+											</li>
+											<li class="mb-2">
+												<i class="me-2 icon-line-phone-call"></i><a href="tel:+260 966 617 252" class="text-main">+260 772 404 266</a><br>
+												<a href="tel:+260 961 410 630" class="mx-4 text-main">+260 961 410 630</a><br>
+												<a href="tel:+260 772 404 266" class="mx-4 text-main">+260 966 617 252 </a>
+											</li>
+											<li class="mb-2">
+												<i class="me-2 icon-line-mail"></i>
+												<a href="mailto:admin@palmpavilion.co" class="text-main">admin@palmpavilion.co</a>
+											</li>
+											<li class="mb-2"><i class="me-2 icon-line-clock"></i>Mon- Sun | 12pm - 10pm</li>
+											{% comment %} <li><i class="me-2 icon-line-calendar"></i>Sunday Closed</li> {% endcomment %}
+										</ul>
+
+									</div>
+
+								</div>
+								<!--Reservation form-->
+								<div id="reserve" class="col-lg-6 ">
+
+									<div class="widget">
+
+										<h4 class="text-larger nott ls0">Reservation</h4>
+
+										<div class="rounded">
+											{% comment %}
+											<h3 class="font-secondary h1 color">Our Restaurants</h3>
+											{% endcomment %}
+		
+											<div class="form-widget mt-lg-0" data-loader="button">
+												<div class="form-result"></div>
+												{% comment %} {% for regmsg in messages  %}
+													<div class="alert alert-{{ regmsg.tags }} alert-dismissible fade show " role="alert">
+														<strong>Message : </strong> {{ regmsg }}
+														<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+													</div>
+												{% endfor %} {% endcomment %}
+												<form class="mb-0 row" id="template-contactform" name="template-contactform"
+													action="#" method="post">
+													{% csrf_token %}
+												
+		
+													<div class="col-sm-6 mb-3">
+														<input type="text" id="template-contactform-name"
+															name="reg_name" value=""
+															class="sm-form-control border-form-control required"
+															placeholder="Name" />
+													</div>
+													<div class="col-sm-6 mb-3">
+														<input type="email" id="email"
+															name="reg_email" value=""
+															class="required email sm-form-control border-form-control"
+															placeholder="Email Address" />
+													</div>
+		
+													<div class="clear"></div>
+		
+													<div class="col-sm-6 mb-3">
+														<input type="text" id="template-contactform-phone"
+															name="reg_phone" value=""
+															class="sm-form-control border-form-control required"
+															placeholder="Phone" />
+													</div>
+		
+													<div class="col-sm-6 mb-3 input-daterange travel-date-group">
+														<input type="text" id="template-contactform-subject" name="reg_date"
+															value=""
+															class="sm-form-control border-form-control text-start required"
+															placeholder="Select Reservation Date" />
+													</div>
+		
+													<div class="clear"></div>
+		
+													<div class="col-6 mb-3">
+														<select class=" required sm-form-control border-form-control" name="reg_time">
+															<option value="disabled" disabled selected>
+																Select Time
+															</option>
+															<option value="12:00">12:00 - 13:00</option>
+															<option value="13:00">13:00 - 14:00</option>
+															<option value="14:00">14:00 - 15:00</option>
+															<option value="18:00">18:00 - 19:00</option>
+															<option value="19:00">19:00 - 20:00</option>
+															<option value="20:00">20:00 - 21:00</option>
+															<option value="21:00">21:00 - 22:00</option>
+														</select>
+													</div>
+		
+													<div class="col-6 mb-3">
+														<select class="required sm-form-control border-form-control" name="reg_person">
+															<option value="disabled" disabled selected>
+																Person
+															</option>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6+</option>
+														</select>
+													</div>
+		
+													<div class="clear"></div>
+		
+													<div class="col-12 mb-0">
+														<button class="button button-circle button-large text-white ms-0 mt-3"
+															type="submit" id="template-contactform-submit"
+															name="Reserve" value="submit">
+															Reserve Now
+														</button>
+													</div>
+		
+													<div class="clear"></div>
+		
+													<div class="col-12 d-none">
+														<input type="text" id="template-contactform-botcheck"
+															name="template-contactform-botcheck" value=""
+															class="sm-form-control" />
+													</div>
+		
+													<input type="hidden" name="prefix" value="template-contactform-" />
+												</form>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights"><!--class="bg-light"-->
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-sm-4 d-flex justify-content-sm-start mb-3 mb-sm-0 text-main">
+							Copyrights &copy; 2022 All Rights Reserved by Palm Pavilion Banquet &amp; Restaurant
+						</div>
+						<div class="col-sm-4 d-flex justify-content-sm-center mb-3 mb-sm-0">
+							
+								<a href="#" class="social-icon si-facebook si-small border-light-lg">
+									<i class="icon-facebook-f"></i>
+									<i class="icon-facebook-f"></i>
+								</a>
+
+								<a href="#" class="social-icon si-twitter si-small border-light-lg">
+									<i class="icon-twitter2"></i>
+									<i class="icon-twitter2"></i>
+								</a>
+
+								<a href="#" class="social-icon si-instagram si-small border-light-lg">
+									<i class="icon-instagram"></i>
+									<i class="icon-instagram"></i>
+								</a>
+
+								<a href="#" class="social-icon si-email3 si-small border-light-lg">
+									<i class="icon-line-mail"></i>
+									<i class="icon-line-mail"></i>
+								</a>
+							
+						</div>
+						<div class="col-sm-4 d-flex justify-content-sm-end">
+							<div class="copyright-links">
+								Design &amp; Develop by <a href="https://www.zacoinfotech.com/">Zaco Information Technology</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #copyrights end -->	
+		</footer>
+		<!-- #footer end -->
+	</div>
+	<!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/plugins.min.js' %}"></script>
+	<script src="{% static 'js/components/datepicker.js' %}"></script>
+
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script src="{% static 'include/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+	<!-- ADD-ONS JS FILES -->
+	<script src="{% static 'include/rs-plugin/js/pixi.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/addons/revolution.addon.liquideffect.min.js' %}"></script>
+
+	<!-- SLIDER REVOLUTION EXTENSIONS  -->
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.actions.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.migration.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+	<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="{% static 'js/functions.js' %}"></script>
+
+	<script>
+		var revapi2, tpj;
+		var $ = jQuery.noConflict();
+		(function () {
+			if (!/loaded|interactive|complete/.test(document.readyState))
+				document.addEventListener("DOMContentLoaded", onLoad);
+			else onLoad();
+
+			function onLoad() {
+				if (tpj === undefined) {
+					tpj = jQuery;
+					if ("off" == "on") tpj.noConflict();
+				}
+
+				if (tpj("#rev_slider_2_1").revolution == undefined) {
+					revslider_showDoubleJqueryError("#rev_slider_2_1");
+				} else {
+					revapi2 = tpj("#rev_slider_2_1")
+						.show()
+						.revolution({
+							sliderType: "standard",
+							jsFileLocation: "include/rs-plugin/js/",
+							sliderLayout: "fullscreen",
+							dottedOverlay: "none",
+							delay: 9000,
+							navigation: {
+								keyboardNavigation: "off",
+								keyboard_direction: "horizontal",
+								mouseScrollNavigation: "off",
+								mouseScrollReverse: "default",
+								onHoverStop: "off",
+								arrows: {
+									style: "uranus",
+									enable: true,
+									hide_onmobile: false,
+									hide_onleave: false,
+									tmp: "",
+									left: {
+										h_align: "right",
+										v_align: "bottom",
+										h_offset: 80,
+										v_offset: 30,
+									},
+									right: {
+										h_align: "right",
+										v_align: "bottom",
+										h_offset: 20,
+										v_offset: 30,
+									},
+								},
+							},
+							responsiveLevels: [1200, 992, 768, 576],
+							visibilityLevels: [1200, 992, 768, 576],
+							gridwidth: [1200, 992, 768, 576],
+							gridheight: [868, 768, 960, 720],
+							lazyType: "all",
+							shadow: 0,
+							spinner: "off",
+							stopLoop: "off",
+							stopAfterLoops: -1,
+							stopAtSlide: -1,
+							shuffle: "off",
+							autoHeight: "on",
+							fullScreenAutoWidth: "off",
+							fullScreenAlignForce: "off",
+							fullScreenOffsetContainer: "0",
+							fullScreenOffset: "",
+							disableProgressBar: "off",
+							hideThumbsOnMobile: "off",
+							hideSliderAtLimit: 0,
+							hideCaptionAtLimit: 0,
+							hideAllCaptionAtLilmit: 0,
+							debugMode: false,
+							fallbacks: {
+								simplifyAll: "off",
+								nextSlideOnWindowFocus: "off",
+								disableFocusListener: false,
+							},
+						});
+				} /* END OF revapi call */
+
+				RsLiquideffectAddOn(tpj, revapi2);
+
+				if (typeof ExplodingLayersAddOn !== "undefined")
+					ExplodingLayersAddOn(tpj, revapi2);
+			} /* END OF ON LOAD FUNCTION */
+		})(); /* END OF WRAPPING FUNCTION */
+
+
+
+
+		/* Reservation Date picker*/
+		$(function () {
+			$(".travel-date-group").datepicker({
+				autoclose: true,
+				startDate: "today",
+				todayHighlight: true,
+			});
+		});
+
+
+
+
+
+		/* Home Gallery slider*/
+		jQuery(window).on("pluginSwiperReady", function () {
+			var sliderTop = new Swiper(".slider-top", {
+				spaceBetween: 10,
+				slidesPerView: "auto",
+				centeredSlides: true,
+				navigation: {
+					nextEl: ".slider-arrow-right",
+					prevEl: ".slider-arrow-left",
+				},
+				loop: true,
+				loopedSlides: 4,
+			});
+			var sliderThumbs = new Swiper(".slider-thumbs", {
+				spaceBetween: 10,
+				centeredSlides: true,
+				slidesPerView: "auto",
+				touchRatio: 0.2,
+				slideToClickedSlide: true,
+				loop: true,
+				loopedSlides: 4,
+			});
+
+			sliderTop.controller.control = sliderThumbs;
+			sliderThumbs.controller.control = sliderTop;
+		});
+
+
+
+		
+
+		$(document).ready(function(){
+            
+            // use keyup event on email field
+            $("#email").keyup(function(){
+                if(validateEmail("#email")){
+                    // if the email is validated
+                    // set input email border green
+                    $("#email").css("border","2px solid green");
+                    // and set label 
+                    $("#emailMsg").html("");
+                }else{
+                    // if the email is not validated
+                    // set border red
+                    $("#email").css("border","2px solid red");
+                    $("#emailMsg").html("<p class='text-danger '>Please Enter Valid Email</p>");
+                }
+                //buttonState();
+            });
+
+            
+           
+        });
+
+        function validateEmail(abc){
+            // get value of input email
+            var email=$(abc).val();
+            // use reular expression
+             var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+             if(reg.test(email)){
+                 return true;
+             }else{
+                 return false;
+             }
+        }
+	</script>
+</body>
+
+</html>

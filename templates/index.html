@@ -1,0 +1,787 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block meta %}
+<meta name="author" content="SemiColonWeb" />
+<meta name="description" content="" />
+
+<title> Palm Pavilion Banquet | Home</title>
+{% endblock meta %}
+
+{% block home %}
+
+
+
+<!-- Slider
+		============================================= -->
+<section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header">
+	<div class="slider-inner">
+
+		<div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="distortion-addon"
+			data-source="gallery" style="background:#000000;padding:0px;">
+			<!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
+			<div id="rev_slider_2_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
+				<ul>
+					<!-- SLIDE  -->
+					<li data-index="rs-7" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+						data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+						data-thumb="{% static 'demos/recipes/images/slider/1/100x50-bg.jpg' %}" data-rotate="0"
+						data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+						data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+						data-param10="" data-description=""
+						data-liquideffect='{"image":"{% static 'demos/recipes/images/slider/fibers_small.jpg' %}","imagesize":"external","autoplay":true,"scalex":4,"scaley":4,"speedx":0.5,"speedy":-0.5,"rotationx":0,"rotationy":0,"rotation":0,"transtime":2000,"easing":"Power3.easeOut","transcross":false,"transpower":false,"transitionx":0,"transitiony":0,"transpeedx":0,"transpeedy":0,"transrotx":0,"transroty":0,"transrot":0}'>
+						<!-- MAIN IMAGE -->
+						<img src="{% static 'demos/recipes/images/slider/dummy.png' %}" alt="Image" data-duration="4000"
+							data-lazyload="{% static 'demos/recipes/images/slider/1/bg1.png' %}"
+							data-bgposition="center center" data-bgfit="cover" data-bgparallax="4" class="rev-slidebg"
+							data-no-retina>
+						<!-- LAYERS -->
+
+						<!-- LAYER NR. 1 -->
+						<h3 class="tp-caption font-primary" id="slide-7-layer-13-1"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','top','top']" data-voffset="['-100','-100','180','80']"
+							data-fontsize="['54','54','54','40']" data-width="['600','400','600','400']" data-height="auto"
+							 data-type="text" data-responsive_offset="on"
+							data-frames='[{"delay":1200,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['left','left','center','center']"
+							style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; font-size: 54px; line-height: 54px; letter-spacing: 0px; color:#FFF">
+							A farm-to-table restaurant that uses all-natural ingredients</h3>
+
+						<!-- LAYER NR. 2 -->
+						 {% comment %} <p class="tp-caption Restaurant-Description " id="slide-7-layer-13-2"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','top','top']" data-voffset="['-100','-100','180','80']"
+							data-fontsize="['18','18','18','18']" data-lineheight="['30','30','30','30']"
+							data-fontweight="['400','400','400','400']" data-width="['480','400','480','400']"
+							data-height="auto" data-visibility="['on', 'on', 'off', 'off']" data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"delay":1500,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['left','left','center','center']"
+							style="z-index: 5; min-width: 480px; max-width: 480px; white-space: normal; letter-spacing: 0px;">
+							Appropriately provide access to front-end potentialities via synergistic experiences.
+							Competently maximize open-source imperatives after corporate systems.</p> {% endcomment %}
+
+						<!-- LAYER NR. 3 -->
+						<div class="tp-caption" id="slide-7-layer-12" data-x="['right','right','middle','middle']"
+							data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+							data-voffset="['0','0','-70','-10']" data-width="auto" data-height="auto"
+							data-whitespace="normal" data-type="image" data-responsive_offset="on"
+							data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+							style="z-index: 6;">
+							<div class="rs-looped rs-rotate" data-easing="Linear.easeNone" data-startdeg="0"
+								data-enddeg="180" data-speed="40" data-origin="50% 50%"><img
+									src="{% static 'demos/recipes/images/slider/dummy.png' %}" alt="Image"
+									data-ww="['530px','400px','200px','200px']"
+									data-hh="['530px','400px','200px','200px']"
+									data-lazyload="{% static 'demos/recipes/images/slider/1/13.png' %}" data-no-retina>
+							</div>
+						</div>
+
+						<!-- LAYER NR. 6 -->
+						{% comment %} <div class="tp-caption  " id="slide-7-layer-20" data-x="['left','left','middle','middle']"
+							data-hoffset="['0','30','0','0']" data-y="['middle','middle','middle','middle']"
+							data-voffset="['0','0','90','130']" data-width="auto" data-fontsize="['20','18','20','20']"
+							data-height="auto" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+							data-frames='[{"delay":2600,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+							style="z-index: 14; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+							<span class="me-3"><i class="icon-star"></i> <i class="icon-star"></i> <i
+									class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star2"></i></span>
+							<strong>4.0 </strong><span style="font-weight: 300">(2,123 Reviews)</span>
+						</div> {% endcomment %}
+
+						<!-- LAYER NR. 5 -->
+						{% comment %} <div class="tp-caption slider-features tp-resizeme" id="slide-7-layer-19"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['100','100','210','230']"
+							data-width="auto" data-height="auto" data-whitespace="nowrap" data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"delay":2500,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+							style="z-index: 13;">
+							<ul class="list-unstyled dark">
+								<li class="d-inline-block">
+									<img src="{% static 'demos/recipes/images/icons/timer.svg' %}" alt="Timer"
+										width="30">
+									<h4>40 Mins</h4>
+								</li>
+
+								<li class="d-inline-block">
+									<img src="{% static 'demos/recipes/images/icons/ingredients.svg' %}"
+										alt="ingredients" width="30">
+									<h4>9 Ingredients</h4>
+								</li>
+
+								<li class="d-inline-block">
+									<img src="{% static 'demos/recipes/images/icons/kcal.svg' %}" alt="kcal" width="30">
+									<h4>600 Kcal</h4>
+								</li>
+							</ul>
+						</div> {% endcomment %}
+
+						<a class="tp-caption rev-btn button button-large m-0 button-white fw-bold button-circle button-light"
+							href="#reserve" target="_blank" id="slide-7-layer-13"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','bottom','bottom']" data-voffset="['70','50','30','0']"
+							data-width="auto" data-height="auto" data-type="button" data-actions=''
+							data-responsive_offset="off" data-responsive="off" data-fontsize="['17', '17', '15', '15']"
+							data-lineheight="['40', '40', '30', '30']"
+							data-frames='[{"delay":2000,"speed":1600,"frame":"0","from":"x:50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#FFF","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#FFF","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:#000;"}]'
+							style="z-index: 9; background-color: #FFF; padding: 4px 28px"><span>Reserve Now</span> <i
+								class="icon-angle-right"></i>
+						</a>
+					</li>
+					<!-- SLIDE  -->
+					<!-- SLIDE  -->
+					<li data-index="rs-8" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+						data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+						data-thumb="{% static 'demos/recipes/images/slider/1/100x50-bg.jpg' %}" data-rotate="0"
+						data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+						data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+						data-param10="" data-description=""
+						>
+						<!-- MAIN IMAGE -->
+						<img src="{% static 'demos/recipes/images/slider/dummy.png' %}" alt="Image" data-duration="4000"
+							data-lazyload="{% static 'demos/recipes/images/slider/2/bg7.png' %}"
+							data-bgposition="center center" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+						<!-- LAYERS -->
+
+						<!-- LAYER NR. 1 -->
+						<h3 class="tp-caption font-primary tp-resizeme" id="slide-8-layer-13-1"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','top','top']" data-voffset="['-100','-100','180','80']"
+							data-fontsize="['54','54','54','40']" data-width="['600','400','600','400']" data-height="none"
+							 data-type="text" data-responsive_offset="on"
+							data-frames='[{"delay":2000,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']"
+							style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; font-size: 54px; line-height: 50px; letter-spacing: 0px; color: #fff;">
+							You just dream your banquet hall… leave the rest with us</h3>
+
+						<!-- LAYER NR. 2 -->
+						{% comment %} <p class="tp-caption Restaurant-Description  tp-resizeme" id="slide-8-layer-13-2"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','top','top']" data-voffset="['-100','-100','180','80']"
+							data-fontsize="['18','18','18','18']" data-lineheight="['30','30','30','30']"
+							data-fontweight="['400','400','400','400']" data-width="['480','480','480','400']"
+							data-height="none" data-visibility="['on', 'on', 'off', 'off']" data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"delay":2500,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['left','left','center','center']"
+							style="z-index: 5; min-width: 480px; max-width: 480px; white-space: normal; letter-spacing: 0px;color: #111;">
+							Collaboratively fabricate focused web services and premium total linkage. Globally
+							re-engineer covalent potentialities with scalable scenarios. Rapidiously syndicate
+							future-proof.</p> {% endcomment %}
+
+						<!-- LAYER NR. 3 -->
+						<div class="tp-caption tp-resizeme" id="slide-8-layer-12"
+							data-x="['right','right','middle','middle']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-70','-10']"
+							data-width="none" data-height="none" data-whitespace="normal" data-type="image"
+							data-responsive_offset="on"
+							data-frames='[{"delay":2500,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+							style="z-index: 6;">
+							<div class="rs-looped rs-rotate" data-easing="Linear.easeNone" data-startdeg="0"
+								data-enddeg="180" data-speed="40" data-origin="50% 50%"><img
+									src="{% static 'demos/recipes/images/slider/dummy.png' %}" alt="Image"
+									data-ww="['602px','500px','300px','200px']"
+									data-hh="['602px','500px','300px','200px']"
+									data-lazyload="{% static 'demos/recipes/images/slider/2/2.png' %}" data-no-retina>
+							</div>
+						</div>
+
+						<!-- LAYER NR. 6 -->
+						{% comment %} <div class="tp-caption   tp-resizeme" id="slide-8-layer-20"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['0','0','90','130']"
+							data-width="none" data-fontsize="['20','18','20','20']" data-height="none"
+							data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+							data-frames='[{"delay":3100,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+							style="z-index: 14; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #333; letter-spacing: 0px;">
+							<span class="me-3"><i class="icon-star"></i> <i class="icon-star"></i> <i
+									class="icon-star"></i> <i class="icon-star"></i> <i
+									class="icon-star-half"></i></span><strong>4.7 </strong><span
+								style="font-weight: 300">(1,313 Reviews)</span>
+						</div>
+
+						<!-- LAYER NR. 5 -->
+						<div class="tp-caption slider-features tp-resizeme" id="slide-8-layer-19"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['100','100','210','230']"
+							data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"delay":3400,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+							style="z-index: 13;">
+							<ul class="list-unstyled">
+								<li class="d-inline-block">
+									<img src="{% static 'demos/recipes/images/icons/timer-dark.svg' %}" alt="Timer"
+										width="30">
+									<h4>37 Mins</h4>
+								</li>
+
+								<li class="d-inline-block">
+									<img src="{% static 'demos/recipes/images/icons/ingredients-dark.svg' %}"
+										alt="ingredients" width="30">
+									<h4>11 Ingredients</h4>
+								</li>
+
+								<li class="d-inline-block">
+									<img src="{% static 'demos/recipes/images/icons/kcal-dark.svg' %}" alt="kcal"
+										width="30">
+									<h4>450 Kcal</h4>
+								</li>
+							</ul>
+						</div> {% endcomment %}
+						<a class="tp-caption rev-btn button button-large m-0 button-white fw-bold button-circle button-light"
+							href="tel:+260 966 617 252" target="_blank" id="slide-7-layer-13"
+							data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+							data-y="['middle','middle','bottom','bottom']" data-voffset="['70','50','30','0']"
+							data-width="auto" data-height="auto" data-type="button" data-actions=''
+							data-responsive_offset="off" data-responsive="off" data-fontsize="['17', '17', '15', '15']"
+							data-lineheight="['40', '40', '36', '30']"
+							data-frames='[{"delay":3000,"speed":1600,"frame":"0","from":"x:50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#FFF","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#FFF","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:#000;"}]'
+							style="z-index: 9; background-color: #FFF; padding: 4px 28px"><span>Call Us</span> <i
+								class="icon-angle-right"></i>
+						</a>
+					</li>
+				</ul>
+				<div class="tp-bannertimer" style="height: 6px; background: rgba(255,255,255,0.15);"></div>
+			</div>
+		</div><!-- END REVOLUTION SLIDER -->
+
+	</div>
+</section>
+
+<!-- Content
+		============================================= -->
+<section id="content">
+	<div class="content-wrap pb-0" style="overflow: visible;">
+
+
+
+		<!--About-->
+		<div class=" bg-transparent">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 offset-md-2 center">
+						{% comment %} <span class="font-primary ls1" style="font-size: 18px; color: #AAA">A Special Location For Every Occasion.</span> {% endcomment %}
+						<h2 class=" mb-5 ls1 text-uppercase">Welcome To <br>Palm Pavilion Banquet &amp Restaurant</h2>
+						<p style="font-size: 17px; color: #777">Hosting a grand private and luxurious event in Makeni is
+							definitely an unforgettable experience. Located in the capital city of Zambia, Palm Pavilion
+							banquet and restaurant offers a feel of hosting an event amidst a calm and serene
+							surrounding. Their spacious state of art banquet hall and restaurant is a combination of
+							luxury and elegance.</p>
+						{% comment %} <img src="{% static 'demos/barber/images/about/sign.png' %}" alt="Sign"
+							width="150" class="mt-3"> {% endcomment %}
+						<a href="{% url 'about' %}"
+							class="button mb-5	 button-border button-large  button-rounded nott ls0 font-primary">About
+							Us</a>
+					</div>
+
+					<!--Menu-->
+					<div class="col-12 mt-5 ">
+						<h3 class="center">Browse our Menu</h3>
+
+						<div class="recipe-categories justify-content-center">
+							<a href="{% url 'menu' %}?category=Grill Kebabs" data-animate="fadeInUp" class="recipe-category"
+								style="background-image: url('{% static 'demos/recipes/images/categories/grill.png' %}');">
+								<div class="recipe-category-inner">
+									<div class="recipe-category-icon"><img
+											src="{% static 'demos/recipes/images/icons/grill.svg' %}" alt="Breakfast">
+									</div>
+									<div class="recipe-category-info">Grill Kebabs</div>
+								</div>
+							</a>
+
+							<a href="{% url 'menu' %}?category=Indian Mains" data-animate="fadeInUp" data-delay="100"
+								class="recipe-category"
+								style="background-image: url('{% static 'demos/recipes/images/categories/indian.png'%}');">
+								<div class="recipe-category-inner">
+									<div class="recipe-category-icon"><img
+											src="{% static 'demos/recipes/images/icons/dinner.svg' %}" alt="Lunch"></div>
+									<div class="recipe-category-info">Indian Mains</div>
+								</div>
+							</a>
+
+							<a href="{% url 'menu' %}?category=Soups" data-animate="fadeInUp" data-delay="200"
+								class="recipe-category"
+								style="background-image: url('{% static 'demos/recipes/images/categories/soup.png'%}');">
+								<div class="recipe-category-inner">
+									<div class="recipe-category-icon"><img
+											src="{% static 'demos/recipes/images/icons/soup.svg' %}" alt="Dinner"></div>
+									<div class="recipe-category-info">Soups</div>
+								</div>
+							</a>
+
+							<a href="{% url 'menu' %}?category=Indo-Chinese" data-animate="fadeInUp" data-delay="300"
+								class="recipe-category"
+								style="background-image: url('{% static 'demos/recipes/images/categories/indo.png'%}');">
+								<div class="recipe-category-inner">
+									<div class="recipe-category-icon"><img
+											src="{% static 'demos/recipes/images/icons/vegan.svg'%}" alt="Desserts">
+									</div>
+									<div class="recipe-category-info">Indo-Chinese</div>
+								</div>
+							</a>
+
+							<a href="{% url 'menu' %}?category=Indian Breads" data-animate="fadeInUp" data-delay="400"
+								class="recipe-category"
+								style="background-image: url('{% static 'demos/recipes/images/categories/breads.png'%}');">
+								<div class="recipe-category-inner">
+									<div class="recipe-category-icon"><img
+											src="{% static 'demos/recipes/images/icons/bf.svg'%}" alt="Vegan"></div>
+									<div class="recipe-category-info">Indian Breads</div>
+								</div>
+							</a>
+
+							<a href="{% url 'menu' %}?category=Rice" data-animate="fadeInUp" data-delay="500"
+								class="recipe-category"
+								style="background-image: url('{% static 'demos/recipes/images/categories/rice.png'%}');">
+								<div class="recipe-category-inner">
+									<div class="recipe-category-icon"><img
+											src="{% static 'demos/recipes/images/icons/rice.svg'%}" alt="Indian Breads">
+									</div>
+									<div class="recipe-category-info">Rice</div>
+								</div>
+							</a>
+
+							<a href="{% url 'menu' %}?category=Sea Food" data-animate="fadeInUp" data-delay="600"
+								class="recipe-category"
+								style="background-image: url('{% static 'demos/recipes/images/categories/seafood.png'%}');">
+								<div class="recipe-category-inner">
+									<div class="recipe-category-icon"><img
+											src="{% static 'demos/recipes/images/icons/seafood.svg'%}" alt="Beverages">
+									</div>
+									<div class="recipe-category-info">Sea Food</div>
+								</div>
+							</a>
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--Service-->
+		<div class="section bg-transparent">
+			<div class="d-none d-lg-block"
+				style="background: #FFF url('{% static 'demos/restaurant/images/sections/3.jpg' %}') no-repeat center center / cover; height: 100%;position: absolute; top: 0; left: 0; width: 100%">
+			</div>
+			<div class="container clearfix">
+
+				<div class="border-bottom-0">
+						
+					<span class="font-primary ls1" style="font-size: 14px; color: #AAA">Services</span>
+					<h3 class="nott ls0" style="font-size: 40px; line-height: 1.3;">What We Do</h3>
+				</div>
+				<div class="row clearfix">
+					<div class="col-lg-6 col-md-6 col-12"><a href="services#content"><img src="{% static 'images\PPBevents\Resturants.png' %}"
+							alt="Image">
+							<h4 class="nott  ls0" style="font-size: 30px; line-height: 1.3;">Restaurant</h4></a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<a href="{% url 'services' %}"
+							class="button button-border button-large  button-rounded nott ls0 font-primary service-button">Our
+							Service</a>
+						
+					
+
+							<a href="services#BANQUET"><img src="{% static 'images\PPBevents\Banquet.png' %}" alt="Image"
+							class="home_ban">
+								<h4 class="nott home_ban2  ls0"
+									style="font-size: 30px; line-height: 1.3; margin-bottom:10px;">Banquet</h4>	</a>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--Events-->
+		<div class="section recipe-items p-0" style="overflow: visible;background-color: #f9f9f9">
+			<div class="row align-items-stretch align-content-stretch g-0">
+				<div class="col-lg-4 dark">
+					<div class="position-sticky min-vh-60 min-vh-md-100 d-flex flex-column align-items-center center justify-content-center"
+						style="top:0; background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url('{% static 'images\PPBevents\events.png' %}') center center / cover;">
+						<h2 class="display-4 px-3 center fw-bold d-block">Latest Events<br> &<br> Parties</h2>
+						<a href="{% url 'gallery' %}"
+							class="button button-large button-light button-white button-circle m-0 px-5">View All</a>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row g-0">
+
+						<!-- Item 1 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\wedding.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Gunther Beard</a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i>
+											4.6</span>{% endcomment %}
+									</div>
+									<h3 class="card-title center">Weddings</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Dec 26, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 2 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\engagement.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Chauffina Carr</a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i>
+											4.9</span>{% endcomment %}
+									</div>
+									<h3 class="card-title center">Engagement Parties</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Dec 1, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 3 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\anniversaries.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Eric Widget </a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i>
+											4.3</span>{% endcomment %}
+									</div>
+									<h3 class="card-title center">Anniversaries</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Nov 20, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 4 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\birthdays.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Quiche Hollandaise</a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i>
+											4.5</span>{% endcomment %}
+									</div>
+									<h3 class="card-title center">Birthdays</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Oct 2, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 5 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\theme.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Norman Gordon</a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i> 4.5</span>
+										{% endcomment %}
+									</div>
+									<h3 class="card-title center">Congratulatory / Theme Parties</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Sep 18, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 6 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\kitchen.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Druid Wensleydale</a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i>
+											4.0</span>{% endcomment %}
+									</div>
+									<h3 class="card-title center">Chilanga Mulilo / Kitchen Parties</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Sep 7, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 7 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\business.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Bailey Wonger</a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i>
+											4.5</span>{% endcomment %}
+									</div>
+									<h3 class="card-title center">Corporate Events & Exhibition</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Aug 12, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 8 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\religious.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Pelican Steve</a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i>
+											4.2</span>{% endcomment %}
+									</div>
+									<h3 class="card-title center">Religious functions</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Aug 8, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 9 -->
+						<div class="col-sm-4 col-6">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images\PPBevents\memorial.png'%}" alt="image">
+									<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+										{% comment %} <p class="card-author">By <a href="#">Malcolm Function</a></p>
+										<span class="badge bg-primary bg-color"><i class="icon-star3"></i> 4.3</span>
+										{% endcomment %}
+									</div>
+									<h3 class="card-title center">Memorial Services</h3>
+									{% comment %} <h5 class="card-date"><i class="icon-line2-calendar"></i>Jul 26, 2021
+									</h5> {% endcomment %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Facility-->
+		<div class=" mb-0" style="padding: 50px 0">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="heading-block center col-md-6 facil">
+						<h2 class="mb-3">Facilities We Have</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae veniam quam incidunt eos eaque esse ducimus dolore, velit, laborum dignissimos?</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row clearfix">
+					<div class="col-lg-3 col-mb-6 bottommargin-sm center">
+						{% comment %} <i class="icon-3x mx-auto mb-0 icon-food"></i> {% endcomment %}
+						<img src="{% static 'images\PPBevents\chair.png' %}">
+						<h3 class=" font-body"
+							style="font-size: 20px; font-weight: 700;margin-top: 20px; margin-bottom:10px">
+							Capacity</h3>
+						<span class="font-primary">upto 600</span>
+					</div>
+
+					<div class="col-lg-3 col-mb-6 bottommargin-sm center">
+						{% comment %} <i class="i-plain i-xlarge mx-auto mb-0 icon-et-clock"></i> {% endcomment %}
+						<img src="{% static 'images\PPBevents\parked-car (1).png' %}">
+						<h3 class=" font-body"
+							style="font-size: 20px; font-weight: 700;margin-top: 20px; margin-bottom:10px">
+							Car Park</h3>
+						<span class="font-primary">upto 120</span>
+					</div>
+				
+
+
+				
+
+					<div class="col-lg-3 col-mb-6 bottommargin-sm center">
+						{% comment %} <i class="icon-car icon-3x mx-auto mb-0 "></i> {% endcomment %}
+						<img src="{% static 'images\PPBevents\size.png' %}">
+						<h3 class=" font-body"
+							style="font-size: 20px; font-weight: 700;margin-top: 20px; margin-bottom:10px">
+							Size</h3>
+						<span class="font-primary">820 sq. ft</span>
+					</div>
+
+					<div class="col-lg-3 col-mb-6  bottommargin-sm center">
+						{% comment %} <i class="i-plain i-xlarge mx-auto mb-0 icon-et-heart"></i> {% endcomment %}
+						<img src="{% static 'images\PPBevents\restaurant.png' %}">
+						<h3 class=" font-body"
+							style="font-size: 20px; font-weight: 700;margin-top: 20px; margin-bottom:10px">
+							Food</h3>
+							<span class="font-primary">In house catering</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!--Gallery-->
+		<section id="slider" class="slider-element swiper_wrapper mt-3 customjs h-auto">
+
+			<div class="swiper-container swiper-parent slider-top">
+				{% comment %} <h2 class="text-title-light center" style="margin: 0 0 0px 0px;">Our Gallery</h2> {% endcomment %}
+				<div class="swiper-wrapper h-auto">
+					<div class="swiper-slide"
+						style="background-image: url('{% static 'demos\recipes\images\banquet.png' %}')">
+					</div>
+					<div class="swiper-slide"
+						style="background-image: url('{% static 'demos\recipes\images\chaat.png' %}')">
+					</div>
+					<div class="swiper-slide"
+						style="background-image: url('{% static 'demos\recipes\images\indian-main.png' %}')">
+					</div>
+					{% comment %} <div class="swiper-slide"
+						style="background-image: url('{% static 'images/blocks/preview/portfolio-full/4.jpg' %}')">
+					</div>
+					<div class="swiper-slide"
+						style="background-image: url('{% static 'images/blocks/preview/portfolio-full/5.jpg' %}')">
+					</div>
+					<div class="swiper-slide"
+						style="background-image: url('{% static 'images/blocks/preview/portfolio-full/6.jpg' %}')">
+					</div>
+					<div class="swiper-slide"
+						style="background-image: url('{% static 'images/blocks/preview/portfolio-full/7.jpg' %}')">
+					</div>
+					<div class="swiper-slide"
+						style="background-image: url('{% static 'images/blocks/preview/portfolio-full/8.jpg' %}')">
+					</div> {% endcomment %}
+				</div>
+				<!-- Add Arrows -->
+				<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+				<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+			</div>
+			<div class="swiper-container slider-thumbs">
+				<div class="swiper-wrapper h-auto">
+					<div class="swiper-slide"><img
+							src="{% static 'demos\recipes\images\banquet.png' %}" alt="Image"></div>
+					<div class="swiper-slide"><img
+							src="{% static 'demos\recipes\images\chaat.png' %}" alt="Image"></div>
+					<div class="swiper-slide"><img
+							src="{% static 'demos\recipes\images\indian-main.png' %}" alt="Image"></div>
+					{% comment %} <div class="swiper-slide"><img
+							src="{% static 'images/blocks/preview/portfolio-full/thumbs/4.jpg' %}" alt="Image"></div>
+					<div class="swiper-slide"><img
+							src="{% static 'images/blocks/preview/portfolio-full/thumbs/5.jpg' %}" alt="Image"></div>
+					<div class="swiper-slide"><img
+							src="{% static 'images/blocks/preview/portfolio-full/thumbs/6.jpg' %}" alt="Image"></div>
+					<div class="swiper-slide"><img
+							src="{% static 'images/blocks/preview/portfolio-full/thumbs/7.jpg' %}" alt="Image"></div>
+					<div class="swiper-slide"><img
+							src="{% static 'images/blocks/preview/portfolio-full/thumbs/8.jpg' %}" alt="Image"></div> {% endcomment %}
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+		<!--Testimonials-->
+		<div class="section bg-transparent">
+			<div class="container">
+				<h2 class="text-title-light" style="margin: 0 0 -20px 15px;">What our Clients say </h2>
+				
+				<div id="recipes-carousel" class="owl-carousel carousel-widget" data-margin="0" data-nav="true"
+					data-pagi="false" data-items="1">
+					<div class="row g-0 align-items-stretch rounded shadow">
+						<div class="col-lg-5 rounded-start"
+							style="background: url('{% static 'demos/recipes/images/recipe-week.jpg' %}') no-repeat center center / cover; min-height: 300px">
+							{% comment %} <a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe"
+								class="play-video stretched-link">
+								<i class="icon-play"></i>
+							</a> {% endcomment %}
+						</div>
+						<div class="col-lg-7 d-flex justify-content-center flex-column rounded-end"
+							style="padding: 80px 50px">
+							<h3 class="mb-0"><a class="text-dark" href="#">Max Conversion</a></h3>
+									<h5 class="text-black-50 fw-normal">Support</h5>
+									<p class="text-larger">"Assertively utilize performance based processes through an expanded array of human capital. Enthusiastically build flexible materials before customer directed models. Completely extend user-centric sources vis-a-vis."</p>
+							
+						</div>
+					</div>
+
+					<div class="row g-0 align-items-stretch rounded shadow">
+						<div class="col-lg-5 rounded-start dark"
+							style="background: url('{% static 'demos/recipes/images/recipe-week-2.jpg' %}') no-repeat center center / cover; min-height: 300px">
+							{% comment %} <a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe"
+								class="play-video stretched-link">
+								<i class="icon-play"></i>
+							</a> {% endcomment %}
+						</div>
+						<div class="col-lg-7 d-flex justify-content-center flex-column rounded-end"
+							style="padding: 80px 50px">
+							<h3 class="mb-0"><a class="text-dark" href="#">Max Conversion</a></h3>
+									<h5 class="text-black-50 fw-normal">Support</h5>
+									<p class="text-larger">"Assertively utilize performance based processes through an expanded array of human capital. Enthusiastically build flexible materials before customer directed models. Completely extend user-centric sources vis-a-vis."</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		  
+		<div class="section m-0" style="background: url('{% static 'demos/recipes/images/subscribe-bg.jpg' %}') no-repeat center center / cover; min-height: 300px; padding: 120px 0">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 mt-4 mt-sm-0 subscribe-widget" data-loader="button">
+						<div class="heading-block border-bottom-0 mb-2">
+							<h2 class="nott ls0 mb-1">Excited… contact us… we will increase your excitement with our offers</h2>
+							{% comment %} <p class="lead text-muted">Easy Recipes and Cookings right to your Inbox</p> {% endcomment %}
+						</div>
+						<a href="{% url 'contact' %}"
+							class="button button-border button-large  button-rounded nott ls0 font-primary">Contact us</a>
+						{% comment %} <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="mb-0">
+							<div class="input-group input-group-lg">
+								<input type="email" name="widget-subscribe-form-email" class="form-control required" placeholder="Enter Your Email Address..">
+								<button type="submit" class="btn text-white bg-color px-4" id="inputGroup-sizing-lg">Subscribe</button>
+							</div>
+						</form> {% endcomment %}
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		
+
+		
+		
+
+	</div>
+
+
+
+
+</section><!-- #content end -->
+
+
+
+
+
+{% endblock home %}
